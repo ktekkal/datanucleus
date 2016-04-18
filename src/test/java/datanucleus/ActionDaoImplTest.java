@@ -21,9 +21,9 @@ public class ActionDaoImplTest {
 		Assert.assertEquals(0, actionDao.getActions("user1").size());
 
 		Action action = new Action();
-		action.username = "user1";
-		action.title = "A title";
-		action.content = "A content";
+		action.setUsername("user1");
+		action.setTitle("A title");
+		action.setContent("A content");
 
 		actionDao.addAction(action);
 

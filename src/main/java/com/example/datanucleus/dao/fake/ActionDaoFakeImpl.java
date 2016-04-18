@@ -10,9 +10,9 @@ public class ActionDaoFakeImpl implements ActionDao {
 
 	public List<Action> getActions(String username) {
 		Action action = new Action();
-		action.username = username;
-		action.content = "A fake content";
-		action.title = "Do something";
+		action.setUsername(username);
+		action.setTitle("Do something");
+		action.setContent("A fake content");
 
 		List<Action> result = new ArrayList<Action>();
 		result.add(action);
