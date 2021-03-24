@@ -5,9 +5,7 @@
 
     <!-- Test configuration -->
     <persistence-unit name="Example">
-    	<class>com.example.datanucleus.dao.Action</class>
-        <exclude-unlisted-classes/>
-        
+    
         <properties>
             <property name="javax.jdo.option.ConnectionURL" value="jdbc:hsqldb:mem:example"/>
             <property name="javax.jdo.option.ConnectionDriverName" value="org.hsqldb.jdbcDriver"/>
